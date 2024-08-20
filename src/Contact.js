@@ -8,10 +8,10 @@ function Contact({ contact, deleteContact, editContact }) {
   const [updatedEmail, setUpdatedEmail] = useState(contact.email);
 
   const handleEdit = () => {
-    setIsEditing(!isEditing);
     if (isEditing) {
       editContact({ name: updatedName, phone: updatedPhone, email: updatedEmail });
     }
+    setIsEditing(!isEditing);
   };
 
   return (
@@ -41,7 +41,7 @@ function Contact({ contact, deleteContact, editContact }) {
           <p>{contact.email}</p>
         </>
       )}
-      <div className="button-container"> {/* Added button container */}
+      <div className="button-container">
         <button onClick={handleEdit} className="edit-button">
           {isEditing ? 'Save' : 'Edit'}
         </button>

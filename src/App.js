@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import ContactForm from './ContactForm';
 import ContactList from './ContactList';
 import './App.css';
-
 function App() {
   const [contacts, setContacts] = useState([
     { name: "Febin kp", phone: "7356416560", email: "febink123@gmail.com" },
@@ -23,6 +22,18 @@ function App() {
     setShowForm(false);
   };
 
+  const editContact = (index, updatedContact) => {
+    const updatedContacts = contacts.map((contact, i) => 
+      i === index ? updatedContact : contact
+    );
+    setContacts(updatedContacts);
+  };
+
+  const deleteContact = (index) => {
+    const updatedContacts = contacts.filter((_, i) => i !== index);
+    setContacts(updatedContacts);
+  };
+
   return (
     <div className="App">
       <h1>Contact Management System</h1>
@@ -39,7 +50,7 @@ function App() {
         </div>
       )}
       
-      <ContactList contacts={contacts} />
+      <ContactList contacts={contacts} editContact={editContact} deleteContact={deleteContact} />
     </div>
   );
 }
