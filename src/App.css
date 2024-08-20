@@ -1,0 +1,49 @@
+/* App.css */
+
+.App {
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff; /* White background for the main content area */
+  border-radius: 12px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Depth and shadow effect */
+}
+
+/* Add new contact button styling */
+.add-contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #5865f2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 16px;
+  position: relative; /* Position relative for the icon positioning */
+}
+
+/* Plus symbol icon styling */
+.add-icon {
+  font-size: 20px;
+  width: 40px; /* Fixed width for square shape */
+  height: 40px; /* Fixed height for square shape */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5865f2; /* Same as the button color */
+  color: white; /* Color for the plus symbol */
+  border: 2px solid white; /* White border */
+  border-radius: 8px; /* Rounded corners to make the square softer */
+  margin-right: 8px; /* Space between the icon and text */
+  
+  /* Shadow to create the layered border effect */
+  box-shadow: 4px 4px 0 0 rgba(255, 255, 255, 0.5); /* Adjust shadow color and offset */
+}
+
+.add-contact-button:hover {
+  background-color: #3c45c2;
+}

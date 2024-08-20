@@ -1,0 +1,58 @@
+.contact-item {
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: flex-start; /* Align items to the left */
+    padding: 15px 20px; /* Adjusted padding for a balanced look */
+    margin-bottom: 15px;
+    border-radius: 10px; /* Smooth, rounded corners */
+    background-color: rgba(79, 75, 75, 0.8); /* Dark grey with 80% opacity */
+    color: #f0f0f0; /* Light grey font color for contrast */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.contact-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+    transform: translateY(-3px); /* Lift on hover */
+}
+
+.contact-item h2 {
+    margin: 0;
+    font-size: 18px; /* Font size for titles */
+    font-weight: bold;
+}
+
+.contact-item p {
+    margin: 5px 0; /* Adjusted spacing for better readability */
+}
+
+.contact-item .button-container {
+    display: flex; /* Enable flexbox for buttons */
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px; /* Space above button container */
+}
+
+.edit-button, .delete-button {
+    padding: 8px 14px; /* Adjusted button padding for comfort */
+    border: none;
+    border-radius: 6px; /* Smooth, rounded button corners */
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #4caf50; /* Green button for edit */
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+.delete-button {
+    background-color: #f44336; /* Red button for delete */
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
